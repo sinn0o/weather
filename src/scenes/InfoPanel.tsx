@@ -15,7 +15,7 @@ export function InfoPanel({ landmark, weather, onRefresh }: InfoPanelProps) {
   const { label: liveTimeLabel } = useNowInTimezone(landmark.timezone);
 
   return (
-    <div className="pointer-events-auto w-full rounded-t-3xl bg-black/40 p-5 text-white backdrop-blur-md sm:w-80 sm:rounded-3xl">
+    <div className="pointer-events-auto w-[90vw] max-w-sm rounded-3xl bg-black/40 p-5 text-white backdrop-blur-md">
       <div className="flex items-start justify-between gap-3">
         <div>
           <p className="text-lg font-semibold">{landmark.cityNameKo}</p>
